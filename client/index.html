@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="login-form">
+        <h1>Chat App</h1>
+        <input type="text" id="user-input" placeholder="Username" required>
+        <button type="submit" id="login-btn">Login</button>
+    </form>
+    <div class="chat-block">
+      <div class="message-block">
+         <!-- <div class="msg msg-recive">Hii(rec)</div>
+         <div class="msg msg-send">Hii(send)</div> -->
+      </div>
+    
+        <form class="message">
+        <input type="text" id="user-msg" placeholder="Enter message..">
+        <button type="submit" class="msgs-send-btn" id="msg-btn">SEND</button>
+      </form>
+
+    </div>
+    <!-- here we importing socketIo  -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script  src="script.js"></script>
+</body>
+
+</html>

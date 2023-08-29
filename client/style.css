@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-form{
+    display: none;
+}
+
+.chat-block{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    overflow-y: auto;
+    background-color: #e1e1e1;
+}
+.message-block{
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    margin-inline: auto;
+    white-space: nowrap;
+}
+.message{
+    all: unset;
+    display: flex;
+    height: 3.5vw;
+}
+.message>input{
+    flex: 8;
+    height: 5vh;
+}
+.msgs-send-btn{
+    flex: 2;
+    height: 5vh;
+
+}
+.msg-send{
+  align-self: flex-end;
+}
+.msg{
+    background-color: aqua;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: 0.5rem;
+   
+}

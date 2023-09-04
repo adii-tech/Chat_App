@@ -1,18 +1,10 @@
 {
     "version":2,
     "builds":[
-        {
+        { "src": "./server.js",
+        "use": "Overcel/node"}],
 
-            "src": "./index.js",
-            
-            "use": "Overcel/node"
-            
-            }
-        ],
-            "routes": [
-            {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-          ]
+    "routes": [
+         { "src": "/(.*)",
+           "dest": "/"}]
 }

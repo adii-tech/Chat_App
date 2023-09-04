@@ -2,7 +2,7 @@
 const express=require('express');
 const SocketIO=require("socket.io");
 const http=require('http');
-
+const hostname='0.0.0.0';
 //these are extraction from above imports
 const app=express();
 const { Server }=SocketIO;
@@ -17,7 +17,7 @@ function onStartFn(){
     console.log("server is up and running");
 }
 //onStartFn is just confirm when server is running
-httpServer.listen(PORT,onStartFn);
+httpServer.listen(PORT,hostname,onStartFn);
 
 IO.on('connection',(socket)=>{//connection is predefined event
     console.log('connection estamblish', socket.id);
